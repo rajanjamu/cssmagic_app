@@ -188,6 +188,7 @@
   border-left: 11vw solid transparent;
   border-right: 11vw solid transparent;
   position: relative;
+  margin-bottom: 8vw;
 
   &:after {
     content: '';
@@ -199,5 +200,40 @@
     position: absolute;
     top: 8vw;
     left: -11vw;
+  }
+}
+
+#heart1 {
+  margin: 0 auto;
+  width: 0px;
+  border-top: 12vw solid $pomegranate;
+  border-left: 9.8vw solid transparent;
+  border-right: 9.8vw solid transparent;
+  position: relative;
+  margin-top: 8vw;
+  border-radius: 30%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 10vw;
+    height: 10vw;
+    background-color: $pomegranate;
+    border-radius: 100%;
+    left: -9.7vw;
+    top: -18.6vw;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 10vw;
+    height: 10vw;
+    background-color: $pomegranate;
+    border-radius: 100%;
+    left: -0.3vw;
+    top: -18.6vw;
   }
 }
