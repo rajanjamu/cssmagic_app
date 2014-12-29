@@ -35,6 +35,10 @@ group :development, :test do
   gem 'guard-livereload'
 end
 
+group :development do
+  gem 'guard'
+end
+
 group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
