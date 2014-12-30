@@ -242,6 +242,10 @@
   border-right: 10vw solid transparent;
   position: relative;
   margin-top: 5vw;
+  transform-origin: 50% 33%;
+
+  animation: chakra 2s linear infinite;
+  -webkit-animation: chakra 2s linear infinite;
 
   &:after {
     content: '';
@@ -255,6 +259,59 @@
     margin-top: -23.1vw;
   }
 }
+@keyframes "chakra" {
+  transform-origin: 50% 33%;
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes "chakra" {
+  transform-origin: 50% 33%;
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#star3 {
+  margin: 0 auto;
+  width: 0px;
+  border-top: 17.32vw solid $blue;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  position: relative;
+  margin-top: 5vw;
+  transform-origin: 50% 33%;
+  transform: rotate(30deg);
+
+  margin-left: -10vw;
+
+  animation: gear 2s linear infinite;
+  -webkit-animation: gear 2s linear infinite;
+
+  &:after {
+    content: '';
+    margin: 0 auto;
+    width: 0px;
+    border-bottom: 17.32vw solid $blue;
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    position: absolute;
+    margin-left: -10vw;
+    margin-top: -23.1vw;
+  }
+}
+@keyframes "gear" {
+  transform-origin: 50% 33%;
+  0% {transform: rotate(30deg);}
+  100% {transform: rotate(-330deg);}
+}
+
+@-webkit-keyframes "gear" {
+  transform-origin: 50% 33%;
+  0% {transform: rotate(30deg);}
+  100% {transform: rotate(-330deg);}
+}
+
+
 
 #pentagon1 {
   margin: 0 auto;
