@@ -43,6 +43,11 @@
   border-left: 17.32vw solid $green;
   border-top: 8.66vw solid transparent;
   border-bottom: 8.66vw solid transparent;
+  transition: transform 1s ease-out;
+
+  &:hover {
+    transform: rotate(100deg);
+  }
 }
 
 #triangle5 {
@@ -50,6 +55,11 @@
   width: 0px;
   border-bottom: 17.32vw solid $orange;
   border-right: 17.32vw solid transparent;
+  transition: transform 0.5s ease-out;
+
+  &:hover {
+    transform: rotate(60deg);
+  }
 }
 
 #triangle6 {
@@ -57,7 +67,12 @@
   width: 0px;
   border-bottom: 17.32vw solid $pomegranate;
   border-right: 17.32vw solid transparent;
-  transform: rotate(-20deg)
+  transform: rotate(-20deg);
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: rotate(-40deg);
+  }
 }
 
 #arrow1 {
@@ -118,6 +133,7 @@
   border-right: 4.33vw solid transparent;
   position: relative;
   transform: rotate(45deg);
+  transition: all 0.3s ease-out;
 
   &:after {
     content: '';
@@ -128,6 +144,10 @@
     margin-left: -1.5vw;
     margin-top: 8.6vw;
   }
+
+  &:hover {
+    transform: rotate(90deg) translateY(-10vw);
+  }
 }
 
 #trapezium1 {
@@ -136,7 +156,14 @@
   border-bottom: 10vw solid $pomegranate;
   border-left: 4.33vw solid transparent;
   border-right: 4.33vw solid transparent;
+  transition: border-bottom 0.3s ease-out, width 0.3s ease-out;
+
+  &:hover {
+    width: 25vw;
+    border-bottom: 1vw solid $pomegranate;
+  }
 }
+
 
 #trapezium2 {
   margin: 0 auto;
@@ -144,6 +171,11 @@
   border-top: 10vw solid $blue;
   border-left: 4.33vw solid transparent;
   border-right: 4.33vw solid transparent;
+  transition: border-left 0.3s ease-out;
+
+  &:hover {
+    border-left: 0vw solid $blue;
+  }
 }
 
 #trapezium3 {
@@ -153,6 +185,12 @@
   border-left: 10vw solid $midnight-blue;
   border-top: 4.33vw solid transparent;
   border-bottom: 4.33vw solid transparent;
+  transition: transform 0.5s ease-out;
+  transform-origin: top left;
+
+  &:hover {
+    transform: rotate(60deg);
+  }
 }
 
 #parallelogram1 {
@@ -160,7 +198,12 @@
   width: 17.32vw;
   height: 10vw;
   background-color: $orange;
-  transform: skew(20deg);
+  transform: skew(30deg);
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    transform: skew(-30deg);
+  }
 }
 
 #star1 {
@@ -171,6 +214,8 @@
   border-right: 10vw solid transparent;
   position: relative;
   margin-top: 5vw;
+  transition: transform 0.5s ease-out;
+  transform-origin: 50% 33%;
 
   &:after {
     content: '';
@@ -182,6 +227,10 @@
     position: absolute;
     margin-left: -10vw;
     margin-top: -23.1vw;
+  }
+
+  &:hover {
+    transform: translateX(12.5vw) rotate(150deg);
   }
 }
 
@@ -215,6 +264,7 @@
   border-right: 11vw solid transparent;
   position: relative;
   margin-bottom: 8vw;
+  transition: all 0.5s ease-out;
 
   &:after {
     content: '';
@@ -226,6 +276,15 @@
     position: absolute;
     top: 8vw;
     left: -11vw;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 20px #888888;
+  }
+
+  &:hover:after {
+    box-shadow: 10px 10px 20px #888888;
   }
 }
 
