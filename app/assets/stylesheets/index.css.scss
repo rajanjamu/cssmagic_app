@@ -4,6 +4,11 @@
   border-top: 17.32vw solid $red;
   border-left: 10vw solid transparent;
   border-right: 10vw solid transparent;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    border-top-color: lighten($red, 20%)
+  }
 }
 
 #triangle2 {
@@ -12,7 +17,11 @@
   border-right: 17.32vw solid $midnight-blue;
   border-top: 8.66vw solid transparent;
   border-bottom: 8.66vw solid transparent;
-  
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 
 #triangle3 {
@@ -21,6 +30,11 @@
   border-bottom: 17.32vw solid $blue;
   border-left: 10vw solid transparent;
   border-right: 10vw solid transparent;
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
 
 #triangle4 {
@@ -53,6 +67,7 @@
   border-top: 4.33vw solid transparent;
   border-bottom: 4.33vw solid transparent;
   position: relative;
+  transition: all 0.3s ease-out;
 
   &:after {
     content: '';
@@ -62,6 +77,10 @@
     position: absolute;
     margin-left: -13.5vw;
     margin-top: -1.33vw;
+  }
+
+  &:hover {
+    transform: scale(1.2,1.2);
   }
 }
 
@@ -73,6 +92,7 @@
   border-right: 4.33vw solid transparent;
   position: relative;
   margin-bottom: 5vw;
+  transition: all 0.3s ease-out;
 
   &:after {
     content: '';
@@ -82,6 +102,11 @@
     position: absolute;
     margin-left: -1.5vw;
     margin-top: 8.6vw;
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
   }
 }
 
@@ -213,6 +238,8 @@
   position: relative;
   margin-top: 8vw;
   border-radius: 30%;
+  transform: scale(0.8,0.8);
+  transition: all 0.3s ease-out;
 
   &:after {
     content: '';
@@ -236,5 +263,33 @@
     border-radius: 100%;
     left: -0.3vw;
     top: -18.6vw;
+  }
+
+  &:hover {
+    transform: scale(1,1);
+  }
+}
+
+#circle1 {
+  margin: 0 auto;
+  width: 12vw;
+  height: 12vw;
+  background-color: $orange;
+  border-radius: 100%;
+  position: relative;
+  transition: all 1s ease-out;
+
+  &:after {
+    content: '';
+    margin: 0 auto;
+    width: 12vw;
+    height: 0.05vw;
+    background-color: white;
+    top: 6vw;
+    position: absolute;
+  }
+
+  &:hover {
+    transform: translateX(400px) rotate(360deg);
   }
 }
